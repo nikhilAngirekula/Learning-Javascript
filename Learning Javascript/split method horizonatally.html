@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<p id="demo"></p>
+
+	<script>
+		
+		var alphabets = "NikhilAngirekula";
+
+		var horizontal = alphabets.split("");			
+
+		// This is how split works, if we split between the , for example if we have a array called tags
+
+		// var tags = "chicken, pork, mutton, fish" if we split it with , then when ever it sees , it will try to split it and the result is 
+
+		// "chicken", "pork", "mutton", "fish" it splits into individual packets.
+
+		var test = "";
+
+		var i;
+
+		for(i = 0; i < horizontal.length; i++) {
+
+			test += horizontal[i]  + "<br>"
+
+		}	
+		document.getElementById("demo").innerHTML = test;
+
+	</script>
+
+</body>
+</html>
+
+
+
+
+

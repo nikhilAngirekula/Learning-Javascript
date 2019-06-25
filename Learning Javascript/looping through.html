@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <body>
+
+            <p id="demo"></p>
+
+            <button type="button" onclick="myFunction()">Click here for the list</button>
+
+            <script>
+            
+            var alcholBrands = [
+                "Blue lebel",
+                "Green label",
+                "John Bar",
+                "Singleton",
+            ];
+    document.getElementById("demo").innerHTML = alcholBrands;
+
+    function myFunction() {
+        alcholBrands.push("signature", "blenders pride");
+        document.getElementById("demo").innerHTML = alcholBrands;
+    }
+
+            </script>
+        </body>
+    </head>
+</html>

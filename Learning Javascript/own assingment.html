@@ -1,0 +1,40 @@
+// Create a list of phones that should loop and when the user clicks on the button add products then it should add a
+new product into that list.
+
+<html>
+
+<head>
+
+<body>
+    <p id="demo"></p>
+    <button type="button" onclick="myFunction()">Click here</button>
+    <script>
+        var brand, listBrand, text, i;
+        var brand = [
+            "iphone",
+            "samsung",
+            "google",
+            "nokia",
+        ];
+        var listBrand = brand.length;
+        text += "<ul>";
+
+        for (i = 0; i < listBrand; i++) {
+
+            text += "<li>" + brand[i] + "</li>"
+
+        }
+        function myFunction() {
+
+            document.getElementById("demo").innerHTML = brand.push("pixel");
+            
+        }
+        text += "</ul>"
+
+        document.getElementById("demo").innerHTML = text;
+
+    </script>
+</body>
+</head>
+
+</html>
