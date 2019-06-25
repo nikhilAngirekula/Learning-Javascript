@@ -1,0 +1,47 @@
+Given a string "Hello World" output each char with different color. 
+
+<!DOCTYPE html>
+<html>
+
+<body>
+
+
+	<p>
+		<span style="color:blue">H</span>
+		<span style="color:red">E</span>
+		<span style="color:yellow">L</span>
+		<span style="color:brown">L</span>
+		<span style="color:green">O</span>
+
+		<span style="color:blue">W</span>
+		<span style="color:red">O</span>
+		<span style="color:yellow">R</span>
+		<span style="color:brown">L</span>
+		<span style="color:green">D</span>
+	</p>
+
+	<script>
+
+		var text= document.getElementById("content");
+		var str = text.innerHTML, reg =/red|blue|green|orange/ig; 
+
+		var toStr = String(reg);
+		var color = (toStr.replace('\/g', "|")).substring(1);
+
+		var colors = colors.split("|");
+
+		if(colors.indexOf("red") > -1) {
+			str = str.replace(/Hello/g, '<span style="color:red">Hello</span>');
+		}
+
+		if(colors.indexOf("blue") > -1) {
+			str = str.replace(/World/g, '<span style="color:blue">World</span>');
+		}
+
+		document.getElementById("updated").innerHTML = str;
+
+	</script>
+
+
+</body>
+</html>

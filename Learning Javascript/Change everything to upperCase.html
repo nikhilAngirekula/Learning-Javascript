@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	
+	<p id="demo">This is the attempt to learn javascript. Change the javascript to all capital letters by clicking on CAPS BOOM button below.</p>
+
+	<p id="demo1">javascript</p>
+
+	<button type="button" onclick="myFunction()">CAPS BOOM</button>
+
+<body>
+
+	<script>
+		
+		function myFunction() {
+
+			var replace = document.getElementById("demo").innerHTML;
+
+			var replaced = document.getElementById("demo1").innerHTML;
+
+			var change = replace.replace(/javascript/g, "JAVASCRIPT");
+
+			document.getElementById("demo1").innerHTML = replaced.toUpperCase();
+
+			document.getElementById("demo").innerHTML = change;
+
+
+		}
+
+	</script>
+
+</body>
+</html>

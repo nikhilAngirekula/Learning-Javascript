@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+	<p id="demo">I am currently changed my address from sanfransisco, sanfransisco is the best place that i am living now, i love sanfransisco now.</p>
+
+
+
+	<button type="button" onclick="myFunction()">Click here</button>
+
+	<script>
+
+		function myFunction() {
+
+			var str = document.getElementById("demo").innerHTML;
+			var address = str.replace(/sanfransisco/g, "pennsylvania");
+
+			document.getElementById("demo").innerHTML = address;
+		}
+
+	</script>
+
+</body>
+</html>

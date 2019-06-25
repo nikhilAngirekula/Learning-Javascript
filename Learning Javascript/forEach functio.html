@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <body>
+
+            <p id="demo"></p>
+
+            <button type="button" onclick="myFunction()">Click here</button>
+
+            <script>
+            
+            var computers, text;
+
+            var computers = [
+                "mac",
+                "surface pro",
+                "dell",
+                "lenovo"
+            ];
+
+            text += "<ul>";
+
+            computers.forEach(myFunction);
+
+            text += "</ul>";
+
+           function myFunction(value) {
+               
+               text += "<li>" + value + "</li>";
+
+            }
+            
+            document.getElementById("demo").innerHTML = text;
+
+            </script>
+        </body>
+    </head>
+</html>
