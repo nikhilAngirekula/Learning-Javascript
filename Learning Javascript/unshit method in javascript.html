@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <body>
+            <p id="demo"></p>
+        </body>
+
+        <button type="button" onclick="myFunction()">Try to add a element</button>
+
+        <script>
+
+            var cricketTeams = [
+                "Afganistan",
+                "australia",
+                "newzeland",
+                "south africa",
+                "pakistan"
+            ];
+            document.getElementById("demo").innerHTML = cricketTeams;
+            function myFunction() {
+                cricketTeams.unshift("india", "England");
+                document.getElementById("demo").innerHTML = cricketTeams;
+            }
+        </script>
+    </head>
+</html>

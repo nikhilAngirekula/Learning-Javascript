@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <body>
+            <p id="demo"></p>
+            <button type="button" onclick="myFunction()">Click To See New Music Directors</button>
+        </body>
+        <script>
+        var musicDirectors = [
+            "Ar Rehman",
+            "Koti",
+            "Devi Sri Prasad",
+            "Manisharma"
+        ];
+
+        document.getElementById("demo").innerHTML = musicDirectors;
+
+        function myFunction() {
+            musicDirectors[musicDirectors.length] = "SS Thamman";
+
+            document.getElementById("demo").innerHTML = musicDirectors;
+        }
+        </script>
+    </head>
+</html>

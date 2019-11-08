@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <body>
+            <p id="demo"></p>
+            <p id="demo1"></p>
+
+            <button type="button" onclick="MyFunction()">Click Here</button>
+        </body>
+        <script>
+            
+            var softDrinks = [
+                "Coke",
+                "Maza",
+                "Fruity",
+                "Pepsi"
+            ]
+            document.getElementById("demo").innerHTML = softDrinks;
+            function MyFunction() {
+                document.getElementById("demo").innerHTML = softDrinks.sort();              // For sorting
+
+                document.getElementById("demo1").innerHTML = softDrinks.reverse();           // Revese the order
+
+            }
+
+           
+        </script>
+    </head>
+</html>

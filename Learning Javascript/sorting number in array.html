@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <body>
+            <p id="demo"></p>
+            <button type="button" onclick="myFunction()">Click Here</button>
+            <script>
+            
+            var points = [
+                -20,5,100,44
+            ]
+                document.getElementById("demo").innerHTML = points;
+
+                function myFunction() {
+                 //   points.sort(function(a,b){return a-b});                 // This is Acening order 
+
+                    points.sort(function(a,b){return b-a});                 // This is Decending order
+
+                    document.getElementById("demo").innerHTML = points; 
+                }
+
+            </script>
+        </body>
+    </head>
+</html>

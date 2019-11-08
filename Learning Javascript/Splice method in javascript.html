@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <body>
+            <p id="demo"></p>
+            <p id="demo1"></p>
+            <button type="button" onclick="myFunction()">Add Resturents</button>
+        </body>
+        <script>
+            var resturents = [
+                "macdonals",
+                "Burger King",
+                "Taco Bell",
+            ];
+            document.getElementById("demo").innerHTML = resturents;
+            function myFunction() {
+                resturents.splice(2,0, "FourBrothers", "Chipotle");
+
+                document.getElementById("demo1").innerHTML = resturents;
+            }    
+        </script>
+    </head>
+</html>

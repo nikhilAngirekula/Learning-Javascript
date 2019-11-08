@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <body>
+            
+
+            <button type="button" onclick="myFunction1()">Sort By Alphabet</button>
+            <button type="button" onclick="myFunction2()">Sort By Number</button>
+
+            <p id="demo"></p>
+
+            <script>
+
+            var numberSort= [
+                33, 103, 55, 2, -40, 1.627
+            ];
+            
+            function myFunction1() {
+                numberSort.sort();
+                document.getElementById("demo").innerHTML = numberSort;
+
+            }
+
+            function myFunction2() {
+                numberSort.sort(function(a,b){a-b});
+                document.getElementById("demo").innerHTML = numberSort;
+            }
+            </script>
+
+        </body>
+    </head>
+</html>
